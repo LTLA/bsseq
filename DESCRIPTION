@@ -39,7 +39,7 @@ Imports:
     utils,
     HDF5Array (>= 1.19.11),
     rhdf5,
-    beachmat
+    beachmat (>= 2.23.2)
 Suggests:
     testthat,
     bsseqData,

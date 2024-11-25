@@ -15,7 +15,7 @@ SEXP check_M_and_Cov(SEXP M, SEXP Cov, SEXP nt) {
 
     Rtatami::BoundNumericPointer M_bound(M);
     const auto& M_bm = *(M_bound->ptr);
-    Rtatami::BoundNumericPointer Cov_bound(M);
+    Rtatami::BoundNumericPointer Cov_bound(Cov);
     const auto& Cov_bm = *(Cov_bound->ptr);
 
     // Get the dimensions of 'M' and 'Cov' and check these are compatible.
